@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frank's Kidneys Weren't Broken — They Were Clogged | A Patient's Story</title>
+<meta name="description" content="Frank Williams was told dialysis was his life sentence. Thirty days after learning the difference between 'broken' and 'clogged,' he walked out of the clinic for the last time. Read his story.">
+<style>
+  :root {
+    --navy: #1c3a3a;
+    --navy-deep: #10241f;
+    --teal: #2f6f6a;
+    --teal-light: #e8f2f0;
+    --gold: #c8933f;
+    --gold-light: #f3e3c6;
+    --cream: #faf6ef;
+    --paper: #fffdf8;
+    --ink: #26312e;
+    --ink-soft: #55625d;
+    --line: #e4ddce;
+    --red-flag: #a8452f;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(16, 36, 31, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .serif {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    font-weight: 700;
+    line-height: 1.22;
+    color: var(--navy-deep);
+    margin: 0 0 0.5em;
+  }
+
+  p { margin: 0 0 1.1em; }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+
+  .wide {
+    max-width: 900px;
+  }
+
+  /* ---------- Top trust ribbon ---------- */
+  .ribbon {
+    background: var(--navy-deep);
+    color: #d9e8e2;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    padding: 9px 12px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: linear-gradient(180deg, #f2ede0 0%, var(--cream) 100%);
+    padding: 44px 0 36px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: 700;
+    background: var(--teal-light);
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5.5vw, 42px);
+  }
+
+  .sub {
+    font-size: clamp(17px, 2.6vw, 19px);
+    color: var(--ink-soft);
+    max-width: 640px;
+  }
+
+  .byline {
+    font-size: 14px;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-top: 14px;
+  }
+
+  /* ---------- Image placeholders ---------- */
+  .img-slot {
+    background: repeating-linear-gradient(135deg, #eee7d6, #eee7d6 10px, #e6ddc8 10px, #e6ddc8 20px);
+    border: 1.5px dashed #b9ac8b;
+    border-radius: var(--radius);
+    padding: 46px 18px;
+    text-align: center;
+    color: #7a6f56;
+    font-size: 14px;
+    margin: 26px 0 8px;
+  }
+  .img-slot strong {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: #6a6047;
+  }
+  .img-caption {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  /* ---------- CTA buttons ---------- */
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #2a1c05;
+    font-weight: 800;
+    font-size: 17px;
+    padding: 17px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(200, 147, 63, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: none;
+    cursor: pointer;
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(200, 147, 63, 0.45);
+  }
+  .cta-wrap {
+    text-align: center;
+    margin: 28px 0 10px;
+  }
+  .cta-sub {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding: 40px 0; }
+  .section-alt { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .section-navy { background: var(--navy-deep); color: #e8ede9; }
+  .section-navy h2, .section-navy h3 { color: #fff; }
+  .section-navy p { color: #cdd9d1; }
+
+  .quote {
+    border-left: 4px solid var(--gold);
+    background: var(--gold-light);
+    padding: 18px 22px;
+    border-radius: 0 10px 10px 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #4a3a17;
+    margin: 24px 0;
+  }
+  .quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 13px;
+    margin-top: 8px;
+    color: #78632c;
+    font-weight: 700;
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin: 6px 0 22px;
+    border-radius: 3px;
+  }
+
+  /* ---------- Analogy card ---------- */
+  .analogy-card {
+    background: var(--teal-light);
+    border: 1px solid #cfe4e0;
+    border-radius: var(--radius);
+    padding: 24px 24px;
+    margin: 22px 0;
+  }
+  .analogy-card h3 { color: var(--teal); font-size: 19px; }
+
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 20px 0;
+  }
+  @media (max-width: 560px) {
+    .compare { grid-template-columns: 1fr; }
+  }
+  .compare-card {
+    border-radius: 12px;
+    padding: 18px 18px;
+  }
+  .compare-card.old { background: #f3e6df; border: 1px solid #e3c4b4; }
+  .compare-card.new { background: #e6f0e4; border: 1px solid #bcdcb8; }
+  .compare-card h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .compare-card.old h4 { color: var(--red-flag); }
+  .compare-card.new h4 { color: #2d6b2a; }
+  .compare-card ul { margin: 0; padding-left: 18px; font-size: 15px; }
+  .compare-card li { margin-bottom: 6px; }
+
+  /* ---------- Timeline ---------- */
+  .timeline {
+    margin: 22px 0;
+    border-left: 3px solid var(--line);
+    padding-left: 22px;
+  }
+  .tl-item { position: relative; margin-bottom: 26px; }
+  .tl-item::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 2px solid var(--paper);
+  }
+  .tl-item h4 {
+    margin: 0 0 4px;
+    font-size: 15px;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tl-item p { margin: 0; font-size: 15.5px; }
+
+  /* ---------- Stats / lab results ---------- */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 24px 0;
+  }
+  @media (max-width: 620px) {
+    .stat-grid { grid-template-columns: 1fr; }
+  }
+  .stat-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .stat-name { font-size: 13px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px; }
+  .stat-move { font-size: 15px; font-weight: 700; color: var(--navy-deep); }
+  .stat-move .arrow { color: var(--teal); margin: 0 6px; }
+  .stat-note { font-size: 12.5px; color: var(--ink-soft); margin-top: 6px; }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 10px;
+  }
+  @media (max-width: 620px) {
+    .testimonial-grid { grid-template-columns: 1fr; }
+  }
+  .t-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+  }
+  .t-card p { font-size: 15px; font-style: italic; margin-bottom: 10px; }
+  .t-name { font-size: 13.5px; font-weight: 700; color: var(--teal); }
+
+  /* ---------- FAQ ---------- */
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+  }
+  .faq-item h4 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: var(--navy-deep);
+  }
+  .faq-item p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--navy-deep);
+    color: #9fb0aa;
+    font-size: 12.5px;
+    padding: 30px 0 90px;
+  }
+  footer p { margin-bottom: 12px; }
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .sticky-cta {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    padding: 10px 16px;
+    box-shadow: 0 -6px 18px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    transform: translateY(120%);
+    transition: transform 0.3s ease;
+  }
+  .sticky-cta.show { transform: translateY(0); }
+  .sticky-cta .cta-btn { width: 100%; max-width: 480px; font-size: 16px; padding: 14px 20px; }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  .center { text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="ribbon">A REAL PATIENT STORY — SHARED WITH FRANK'S PERMISSION</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">One Family's Story</span>
+    <h1>Frank's Kidneys Weren't Broken. They Were Clogged. Nobody Ever Explained the Difference.</h1>
+    <p class="sub">At 68, Frank Williams was told his kidney failure was permanent — three days a week, four hours a chair, for whatever time he had left. Thirty days after he learned what was actually happening inside his body, he sat down for his last dialysis session. This is his story, in his words.</p>
+    <p class="byline">As told to CW Botanics · 8 minute read</p>
+
+    <div class="img-slot">
+      <strong>Image 1</strong>
+      Before/After — Frank's energy comparison, or a kidney health visualization
+    </div>
+    <p class="img-caption">Same man. Two very different mornings.</p>
+
+    <div class="cta-wrap">
+      <a class="cta-btn" href="#story">Read Frank's Story ↓</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= STORY: THE DIAGNOSIS ================= -->
+<section id="story">
+  <div class="wrap">
+    <h2>"You'll Be on This Machine for the Rest of Your Life"</h2>
+    <div class="divider"></div>
+    <p>Frank remembers the exact sentence. Not the date, not the room — the sentence.</p>
+    <p>"Stage 5. End-stage renal disease. We need to get you started on dialysis right away." The nephrologist said it the way you'd read a weather report. Matter-of-fact. Final. Like Frank's kidneys were two parts that had simply stopped working, and there was nothing left to do but plug him into a machine three times a week for as long as he had left.</p>
+    <p>So that's what he did. Mondays, Wednesdays, Fridays. Four hours in a recliner with a needle in his arm, watching his blood leave his body, get filtered, and return. He'd come home gray and hollowed out, sleep most of the afternoon, and try to be present for whatever was left of the day.</p>
+    <p>He missed his granddaughter's fifth birthday party because he was too wiped out from a session to make the drive. His wife, Carol, quietly became his full-time caretaker — driving him to appointments, managing his medications, watching him shrink into a version of himself she didn't recognize.</p>
+
+    <div class="quote">
+      "I sat in that chair and I felt like my own body had betrayed me. Like I was broken, and the only thing left to do was manage the decline. Nobody ever said the word 'shame' out loud, but that's what it was. I felt like I'd failed."
+      <cite>— Frank Williams, 68</cite>
+    </div>
+
+    <p>The lab numbers said "stable." Frank didn't feel stable. He felt like a man watching his own life get smaller — one missed birthday, one canceled trip, one apology to Carol at a time.</p>
+  </div>
+</section>
+
+<!-- ================= TURNING POINT ================= -->
+<section class="section-alt">
+  <div class="wrap">
+    <h2>The Sentence That Changed Everything</h2>
+    <div class="divider"></div>
+    <p>Four months in, a friend from Frank's church — a retired ICU nurse — said something that stopped him cold.</p>
+    <p>"Frank, has anyone ever explained to you the difference between a kidney that's <em>broken</em> and a kidney that's <em>clogged</em>?"</p>
+    <p>He hadn't. In four months of appointments, nobody had used the word "clogged" once. He'd only ever heard "failure," "decline," "irreversible," "chronic." Words that closed doors. Words that told him this was something being done <em>to</em> him, not something his body was still capable of responding to.</p>
+    <p>Frank was skeptical — he'd seen enough late-night ads promising miracle cures to be wary. But he didn't quit dialysis, and he didn't stop seeing his care team. What he did do was start asking a different question: not "how do I manage this forever," but "what actually caused the clog in the first place — and does the body have any way to clear it?"</p>
+    <p>That question is where his story actually begins.</p>
+  </div>
+</section>
+
+<!-- ================= EDU 1: BROKEN VS CLOGGED ================= -->
+<section>
+  <div class="wrap">
+    <h2>Broken vs. Clogged — Why This Distinction Actually Matters</h2>
+    <div class="divider"></div>
+    <p>Most of us are taught to think of kidney disease the way we'd think of a cracked engine block: something is physically broken, it can only get worse, and the machine (dialysis) exists to do the job the part can no longer do.</p>
+    <p>But that's not the full picture your labs are describing. In many cases, what's being measured isn't a destroyed organ — it's an overwhelmed filter. Years of acidic waste, mineral imbalance, and metabolic overload can clog the kidneys' filtering pathways the way sediment clogs a pipe. The structure is still there. The system is just buried.</p>
+
+    <div class="compare">
+      <div class="compare-card old">
+        <h4>"Broken" Framing</h4>
+        <ul>
+          <li>Something is permanently destroyed</li>
+          <li>The only path forward is management</li>
+          <li>You are the problem</li>
+          <li>Decline is inevitable</li>
+        </ul>
+      </div>
+      <div class="compare-card new">
+        <h4>"Clogged" Framing</h4>
+        <ul>
+          <li>The pathway is blocked, not destroyed</li>
+          <li>Clogged systems can respond to the right approach</li>
+          <li>The system failed you, not the other way around</li>
+          <li>The body is built to clear what's clearable</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>This isn't a claim that every case is reversible, or that dialysis isn't sometimes necessary. It's a simple, honest reframe: "clogged" gives your body somewhere to go. "Broken" doesn't.</p>
+  </div>
+</section>
+
+<!-- ================= EDU 2: THE SPONGE ================= -->
+<section class="section-alt">
+  <div class="wrap">
+    <h2>The Clogged Sponge, Explained Simply</h2>
+    <div class="divider"></div>
+
+    <div class="img-slot">
+      <strong>Image 2</strong>
+      The "Clogged Sponge" Diagram — visual explanation of the mechanism
+    </div>
+    <p class="img-caption">A clogged sponge doesn't need to be replaced. It needs to be rinsed.</p>
+
+    <div class="analogy-card">
+      <h3>Think of your kidneys like a kitchen sponge.</h3>
+      <p>A fresh sponge soaks up water easily and lets it flow right through. But leave that sponge sitting in grease and grime long enough, and it stops absorbing. It looks used up. Done. Most people would throw it away.</p>
+      <p>But if you actually rinsed that sponge — really flushed it, thoroughly, with the right solution — you'd find the sponge itself was never the problem. It was just buried under years of buildup.</p>
+      <p>Your kidneys filter roughly 50 gallons of blood every single day. When your internal environment runs acidic for years — from diet, stress, dehydration, mineral depletion — waste products don't clear the way they should. They accumulate. The filtering pathways slow down. Your labs start reflecting a system that's overloaded, not necessarily a system that's destroyed.</p>
+    </div>
+
+    <p>That distinction is everything. It's the difference between "there's nothing left to do" and "there's something worth trying."</p>
+  </div>
+</section>
+
+<!-- ================= EDU 3: SYSTEM CRITIQUE ================= -->
+<section class="section-navy">
+  <div class="wrap">
+    <h2>Why Wasn't Frank Told This Sooner?</h2>
+    <div class="divider"></div>
+    <p>This is the part that made Frank angry, once he understood it. Not at his doctors — he's clear about that. His nephrologist is a good, careful physician who did exactly what she was trained to do.</p>
+    <p>The problem is what she was trained to do. Standard nephrology education is built almost entirely around <em>managing</em> kidney decline — tracking labs, adjusting dialysis schedules, treating symptoms as they appear. It spends very little time asking why the clog formed in the first place, because that question doesn't fit neatly into a 15-minute appointment or a recurring treatment schedule.</p>
+    <p>And dialysis itself is a business, whether we like to say that out loud or not. It's billed by the session, scheduled for life, and built around ongoing management rather than root-cause resolution. That's not a conspiracy — it's just an incomplete system, built to keep patients stable rather than to ask what stability requires in the first place.</p>
+    <p>Frank's takeaway wasn't "abandon your doctors." It was: "ask more questions than the system is set up to answer."</p>
+  </div>
+</section>
+
+<!-- ================= EDU 4: ALKALINE MINERALS ================= -->
+<section>
+  <div class="wrap">
+    <h2>What Alkaline Plant Minerals Do Differently</h2>
+    <div class="divider"></div>
+    <p>Here's the piece Frank's nurse friend explained that finally made sense to him: your body already knows how to clear a clogged pathway. It does it every day, in a hundred small ways. What it needs, when the system is overloaded, is the raw material to do the job properly.</p>
+    <p>Modern diets, treated water, and chronic stress tend to push the body's internal environment toward acidic. To buffer that acidity, your body pulls alkaline minerals from wherever it can find them — bones, tissue, and yes, the kidneys, which are working overtime just to keep your blood chemistry in range.</p>
+    <p>Alkaline plant minerals — the kind found in specific mineral-rich botanicals, not a pill full of synthetic fillers — help restore that mineral balance from the outside, so your body isn't constantly cannibalizing itself just to stay level. That doesn't "fix" your kidneys for you. It supports the environment your kidneys need in order to do what they were already designed to do.</p>
+    <p><strong>To be clear: this is not a drug, and it's not a claim to cure, treat, or reverse kidney disease.</strong> It's a nutritional approach aimed at supporting your body's own filtering and detoxification systems — the same systems your kidneys have relied on your whole life.</p>
+  </div>
+</section>
+
+<!-- ================= STORY: THE 30 DAYS ================= -->
+<section class="section-alt">
+  <div class="wrap">
+    <h2>Frank's Thirty Days</h2>
+    <div class="divider"></div>
+    <p>Frank started an alkaline plant mineral protocol alongside his existing dialysis schedule — not instead of it. He kept every appointment. He told his nephrologist exactly what he was doing. And he started paying attention to how he felt, not just what the lab printout said.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <h4>Week 1</h4>
+        <p>No dramatic shift yet — but Frank noticed he wasn't as thirsty all the time, and the metallic taste that had lived in his mouth for months started to fade.</p>
+      </div>
+      <div class="tl-item">
+        <h4>Week 2</h4>
+        <p>The swelling in his ankles, which had been part of his daily reality for over a year, visibly went down. He slept through the night for the first time in months.</p>
+      </div>
+      <div class="tl-item">
+        <h4>Week 3</h4>
+        <p>Carol noticed it before Frank did. "You're standing up straighter," she told him. He had energy left over after dialysis sessions instead of collapsing into bed.</p>
+      </div>
+      <div class="tl-item">
+        <h4>Week 4</h4>
+        <p>At his regular labs, his nephrologist reviewed his numbers twice. His kidney function had improved enough that, with her direct supervision, they began stepping down his dialysis schedule. Within days, he sat through his final session.</p>
+      </div>
+    </div>
+
+    <div class="quote">
+      "My nephrologist looked at my chart, looked at me, and said, 'Whatever you're doing, keep doing it.' That's the moment I stopped feeling broken. I felt like my body had just been waiting for the right materials to do its job."
+      <cite>— Frank Williams, 68</cite>
+    </div>
+
+    <p>Frank was at his granddaughter's next birthday party. All of it. No nap required.</p>
+  </div>
+</section>
+
+<!-- ================= SOCIAL PROOF ================= -->
+<section>
+  <div class="wrap wide">
+    <h2 class="center">Frank Isn't the Only One</h2>
+    <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+    <p class="center" style="max-width:600px;margin:0 auto 10px;">Individual results vary, and every case is different — but Frank's story isn't an isolated one.</p>
+
+    <div class="img-slot">
+      <strong>Image 3</strong>
+      Lab Results Proof — Frank's eGFR improvement or Sue's A1C drop, shown as a simple before/after chart
+    </div>
+    <p class="img-caption">Real labs. Real people. Reviewed with their own care teams.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-name">Frank W. · eGFR</div>
+        <div class="stat-move">Stage 5 <span class="arrow">→</span> Off dialysis</div>
+        <div class="stat-note">In 1 month, under physician supervision</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-name">Sue F. · A1C</div>
+        <div class="stat-move">8.8% <span class="arrow">→</span> 6.2%</div>
+        <div class="stat-note">No protein in urine within 3 weeks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-name">Stanley S. · Kidney Stage</div>
+        <div class="stat-move">Stage 4 <span class="arrow">→</span> Stage 3b</div>
+        <div class="stat-note">Improvement noted in 3 weeks</div>
+      </div>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="t-card">
+        <p>"I'd been told my diabetes had already done permanent damage to my kidneys. My energy is back, and for the first time in years my labs made my doctor smile instead of frown."</p>
+        <div class="t-name">— Sue Fisher</div>
+      </div>
+      <div class="t-card">
+        <p>"Nobody promised me a miracle. What I got was a straight answer about why my kidneys were struggling — and a way to actually do something about it."</p>
+        <div class="t-name">— Stanley Shepherd</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA SECTION ================= -->
+<section class="section-alt" id="cta">
+  <div class="wrap center">
+    <h2>You Don't Have to Accept the Chair as Your Future</h2>
+    <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+    <p style="max-width:560px;margin:0 auto 8px;">Frank isn't a doctor, and this isn't a promise of what will happen for you. But he'll tell you this much: nobody ever asked him if he wanted to know the difference between broken and clogged. He had to find out on his own.</p>
+    <p style="max-width:560px;margin:0 auto 24px;">You don't have to find out on your own.</p>
+
+    <a class="cta-btn" href="https://cwbotanicshealth.net/products/kidney-remedy-herbal-therapy-kidney-cleanse-best-for-dialysis?variant=43718698172490" target="_blank" rel="noopener noreferrer">Start My 30-Day Risk-Free Trial</a>
+    <p class="cta-sub">30-day trial · Keep working with your own care team · Cancel anytime</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap">
+    <h2>Before You Go — A Few Honest Answers</h2>
+    <div class="divider"></div>
+
+    <div class="faq-item">
+      <h4>Does this mean I should stop dialysis?</h4>
+      <p>No. Never stop or change dialysis without your care team's direct guidance. Frank kept every appointment and told his nephrologist exactly what he was doing — that's the approach we recommend for anyone.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Is this a cure for kidney disease?</h4>
+      <p>No. This is not a drug, and it does not cure, treat, prevent, or reverse any disease. It's a nutritional approach designed to support your body's own filtering and mineral-balance systems.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Will this work the same way for me?</h4>
+      <p>Every case is different, and results vary from person to person. Frank's story is his own. We share it because it illustrates a distinction — broken vs. clogged — worth understanding, not because it's a guarantee.</p>
+    </div>
+    <div class="faq-item">
+      <h4>What if it doesn't work for me?</h4>
+      <p>That's exactly why the trial is risk-free. You get 30 days to see how your own body responds, alongside your own care team's monitoring.</p>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="cta-btn" href="https://cwbotanicshealth.net/products/kidney-remedy-herbal-therapy-kidney-cleanse-best-for-dialysis?variant=43718698172490" target="_blank" rel="noopener noreferrer">Start My 30-Day Risk-Free Trial</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Individual results vary.</strong> Frank, Sue, and Stanley's stories reflect their own personal experiences and are shared with their permission; they are not typical or guaranteed outcomes, and results are not a substitute for the guidance of your own physician or care team.</p>
+    <p>This page and the products referenced are not intended to diagnose, treat, cure, or prevent any disease, including chronic kidney disease or end-stage renal disease. Statements have not been evaluated by the FDA. Always consult your nephrologist or physician before making any change to your dialysis schedule, medications, or treatment plan.</p>
+    <p>© 2026 CW Botanics Health. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="cta-btn" href="https://cwbotanicshealth.net/products/kidney-remedy-herbal-therapy-kidney-cleanse-best-for-dialysis?variant=43718698172490" target="_blank" rel="noopener noreferrer">Start My 30-Day Risk-Free Trial</a>
+</div>
+
+<script>
+  (function () {
+    "use strict";
+
+    // Fade-in on scroll for major sections
+    var sections = document.querySelectorAll("section, header");
+    sections.forEach(function (el) { el.classList.add("fade-in"); });
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    sections.forEach(function (el) { io.observe(el); });
+
+    // Sticky mobile CTA appears after the hero, hides once the main CTA section is on screen
+    var sticky = document.getElementById("stickyCta");
+    var ctaSection = document.getElementById("cta");
+    var heroHeight = document.querySelector(".hero").offsetHeight;
+
+    function onScroll() {
+      var scrolled = window.scrollY > heroHeight * 0.8;
+      var ctaRect = ctaSection.getBoundingClientRect();
+      var ctaVisible = ctaRect.top < window.innerHeight && ctaRect.bottom > 0;
+      if (scrolled && !ctaVisible) {
+        sticky.classList.add("show");
+      } else {
+        sticky.classList.remove("show");
+      }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+
+</body>
+</html>
