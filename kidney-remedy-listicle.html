@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Six Things About Kidney Wellness That Rarely Make The Pamphlet</title>
+<style>
+  :root {
+    --ink: #17121F;
+    --bone: #FFFFFF;
+    --paper: #F5F1FA;
+    --purple: #5B2A86;
+    --purple-strong: #4A2170;
+    --purple-tint: #ECE1F8;
+    --forest: #1F5C3E;
+    --forest-deep: #16442E;
+    --gold: #A9812A;
+    --line: #E1DAEE;
+    --muted: #5C5468;
+    --focus: #16442E;
+
+    --font-display: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Cascadia Code", Consolas, monospace;
+
+    --measure: 42rem;
+    --panel: 58rem;
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #F3EFFA;
+      --bone: #0F0B18;
+      --paper: #1C1526;
+      --purple: #C9A9F0;
+      --purple-strong: #7B3FC9;
+      --purple-tint: #2C2040;
+      --forest: #5BC090;
+      --forest-deep: #3A9E6F;
+      --gold: #E0BB55;
+      --line: #2E2440;
+      --muted: #BDAED4;
+      --focus: #5BC090;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #F3EFFA;
+    --bone: #0F0B18;
+    --paper: #1C1526;
+    --purple: #C9A9F0;
+    --purple-strong: #7B3FC9;
+    --purple-tint: #2C2040;
+    --forest: #5BC090;
+    --forest-deep: #3A9E6F;
+    --gold: #E0BB55;
+    --line: #2E2440;
+    --muted: #BDAED4;
+    --focus: #5BC090;
+  }
+  :root[data-theme="light"] {
+    --ink: #17121F;
+    --bone: #FFFFFF;
+    --paper: #F5F1FA;
+    --purple: #5B2A86;
+    --purple-strong: #4A2170;
+    --purple-tint: #ECE1F8;
+    --forest: #1F5C3E;
+    --forest-deep: #16442E;
+    --gold: #A9812A;
+    --line: #E1DAEE;
+    --muted: #5C5468;
+    --focus: #16442E;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bone);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  img, svg { max-width: 100%; display: block; }
+
+  a { color: inherit; }
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-wrap: balance;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  .wrap--wide {
+    max-width: var(--panel);
+  }
+
+  /* ---------- header / hero ---------- */
+  header.hero {
+    padding: 4.5rem 0 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero .eyebrow { margin-bottom: 1rem; }
+  h1.title {
+    font-size: clamp(2.3rem, 5.6vw, 3.6rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+  .title .em {
+    color: var(--purple);
+    font-style: italic;
+  }
+  .hook {
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--ink);
+    max-width: 38rem;
+  }
+  .hook strong { color: var(--purple); font-weight: 600; }
+
+  /* ---------- items ---------- */
+  main { padding-block: 1rem 2rem; }
+
+  .item {
+    display: grid;
+    grid-template-columns: minmax(3.5rem, 5.5rem) 1fr;
+    gap: 1rem 1.25rem;
+    padding-block: 2.6rem;
+    border-bottom: 1px solid var(--line);
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .item.is-visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .item { transition: none; opacity: 1; transform: none; }
+  }
+
+  .item .num {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 7vw, 3.8rem);
+    line-height: 1;
+    color: var(--purple);
+    font-weight: 600;
+  }
+  .item h2 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    line-height: 1.2;
+    margin-bottom: 0.85rem;
+  }
+  .item p {
+    margin: 0;
+    color: var(--ink);
+    max-width: var(--measure);
+  }
+  .item strong { color: var(--forest-deep); font-weight: 600; }
+
+  /* ---------- figures ---------- */
+  figure.exhibit {
+    margin: 0 0 2.6rem;
+    padding: 1.75rem 1.5rem 1.4rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+  }
+  figure.exhibit .art { display: flex; justify-content: center; }
+  figure.exhibit svg { width: 100%; height: auto; max-width: 30rem; }
+  figcaption {
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    text-align: center;
+  }
+  figcaption .sub {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.72rem;
+    opacity: 0.85;
+  }
+
+  /* ---------- conclusion ---------- */
+  .conclusion {
+    padding-block: 3rem 2rem;
+  }
+  .conclusion h2 {
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+    margin-bottom: 1.1rem;
+  }
+  .conclusion p { max-width: var(--measure); }
+  .conclusion strong { color: var(--purple); font-weight: 600; }
+
+  /* ---------- CTA ---------- */
+  .cta-section {
+    margin: 2rem auto 3.5rem;
+    padding: 2.75rem 1.75rem;
+    background: var(--ink);
+    color: var(--bone);
+    text-align: center;
+    border-radius: 2px;
+  }
+  .cta-section h2 {
+    color: var(--bone);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 0.6rem;
+  }
+  .cta-section .sub {
+    color: color-mix(in srgb, var(--bone) 78%, transparent);
+    max-width: 32rem;
+    margin: 0 auto 1.75rem;
+    font-size: 1rem;
+  }
+  .btn-primary {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.08rem;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    background: var(--purple-strong);
+    color: #FFFFFF;
+    padding: 1.05rem 2.1rem;
+    border-radius: 2px;
+    box-shadow: 0 6px 0 color-mix(in srgb, var(--purple-strong) 60%, black);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible {
+    transform: translateY(2px);
+    box-shadow: 0 4px 0 color-mix(in srgb, var(--purple-strong) 60%, black);
+  }
+  .cta-terms {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--bone) 70%, transparent);
+  }
+  .cta-terms span { margin-inline: 0.5rem; }
+  .cta-terms .dot { opacity: 0.5; }
+
+  /* ---------- sticky mobile cta ---------- */
+  .sticky-cta {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 40;
+    display: none;
+    padding: 0.7rem 0.9rem calc(0.7rem + env(safe-area-inset-bottom));
+    background: var(--ink);
+    border-top: 1px solid color-mix(in srgb, var(--bone) 20%, transparent);
+    transform: translateY(110%);
+    transition: transform 0.35s ease;
+  }
+  .sticky-cta.show { transform: translateY(0); }
+  .sticky-cta a {
+    display: block;
+    text-align: center;
+    background: var(--purple-strong);
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.85rem 1rem;
+    border-radius: 2px;
+    font-size: 0.98rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sticky-cta { transition: none; }
+  }
+  @media (max-width: 640px) {
+    .sticky-cta { display: block; }
+  }
+
+  /* ---------- footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 2.25rem 0 6.5rem;
+  }
+  @media (min-width: 641px) {
+    footer { padding-bottom: 3rem; }
+  }
+  footer .legal {
+    font-size: 0.82rem;
+    line-height: 1.65;
+    color: var(--muted);
+    max-width: var(--measure);
+  }
+  footer .legal + .legal { margin-top: 0.9rem; }
+  footer .mark {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0.75;
+  }
+
+  @media (max-width: 560px) {
+    .item { grid-template-columns: 1fr; }
+    .item .num { font-size: 2.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Field notes &middot; mineral &amp; elimination support</p>
+    <h1 class="title">Six things about kidney wellness that rarely make the <span class="em">pamphlet</span>.</h1>
+    <p class="hook">
+      Most kidney advice starts and ends with restriction; watch your potassium, limit your protein,
+      wait for the numbers to move. That advice isn't wrong. It's just incomplete. Here's the rest of
+      the picture: <strong>what your body is already built to do</strong>, which other systems share the
+      workload, and where a daily mineral routine fits in; alongside your care team, never instead of them.
+    </p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <article class="item">
+      <div class="num">01</div>
+      <div>
+        <h2>Cellular renewal isn't rare; it's baseline biology</h2>
+        <p>
+          Every tissue in the body runs on turnover: old cells break down, new ones take their place.
+          It isn't a miracle and it isn't a marketing claim; it's how skin, gut lining, and blood cells
+          have always worked, and kidney tissue is no exception at the cellular level. <strong>That baseline
+          capacity for renewal is exactly what a mineral-rich daily routine is built to support</strong>;
+          not replace, not rush, just support, the way rest supports a healing bruise.
+        </p>
+      </div>
+    </article>
+
+    <figure class="exhibit">
+      <div class="art">
+        <svg viewBox="0 0 420 300" role="img" aria-labelledby="fig1title fig1desc">
+          <title id="fig1title">Multiple elimination pathways</title>
+          <desc id="fig1desc">A simple body outline with four labeled pathways: lymphatic, digestive, kidney, and skin.</desc>
+          <ellipse cx="210" cy="150" rx="200" ry="140" fill="none" stroke="var(--line)" stroke-width="1"/>
+          <path d="M210 40 C185 40 172 62 172 88 C172 118 185 138 178 168 C170 205 150 220 155 250 C160 275 195 285 210 285 C225 285 260 275 265 250 C270 220 250 205 242 168 C235 138 248 118 248 88 C248 62 235 40 210 40 Z"
+                fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+          <path d="M172 100 C120 110 95 130 90 150 M172 130 C110 145 90 165 88 185" fill="none" stroke="var(--forest)" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="88" cy="150" r="3" fill="var(--forest)"/>
+          <text x="55" y="128" font-family="var(--font-mono)" font-size="10.5" fill="var(--forest)" text-anchor="middle">LYMPH</text>
+
+          <path d="M195 150 C160 175 140 205 145 235 M205 155 C175 190 160 215 168 245" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="168" cy="245" r="3" fill="var(--gold)"/>
+          <text x="150" y="268" font-family="var(--font-mono)" font-size="10.5" fill="var(--gold)" text-anchor="middle">DIGESTIVE</text>
+
+          <circle cx="210" cy="150" r="9" fill="var(--purple)"/>
+          <text x="210" y="130" font-family="var(--font-mono)" font-size="10.5" fill="var(--purple)" text-anchor="middle">KIDNEYS</text>
+
+          <path d="M248 88 C260 70 262 55 258 42 M235 95 C250 78 255 62 252 48" fill="none" stroke="var(--forest-deep)" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="255" cy="45" r="3" fill="var(--forest-deep)"/>
+          <text x="290" y="42" font-family="var(--font-mono)" font-size="10.5" fill="var(--forest-deep)" text-anchor="middle">SKIN</text>
+        </svg>
+      </div>
+      <figcaption>Fig. 1; Waste clearance runs through more than one system.
+        <span class="sub">Illustrative diagram, not a medical device or diagnostic image.</span>
+      </figcaption>
+    </figure>
+
+    <article class="item">
+      <div class="num">02</div>
+      <div>
+        <h2>Filtration strain can build up from many directions</h2>
+        <p>
+          Diabetes, blood pressure, autoimmune activity, diet; the everyday contributors to kidney
+          strain look different for everyone, but they tend to land in the same place: the filtration
+          units doing more work than usual. <strong>Supporting the body's broader detox pathways is one
+          way to ease some of that load</strong>, which is why whole-body elimination support; not only
+          kidney-specific fixes; is worth paying attention to.
+        </p>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="num">03</div>
+      <div>
+        <h2>Your kidneys aren't the only exit door</h2>
+        <p>
+          It's easy to think of the kidneys as the body's only waste-clearing system. They're not.
+          The lymphatic system, the digestive tract, and even the skin all play a role in clearing
+          waste from the body. Supporting those pathways can ease some of the overall burden your
+          kidneys are carrying.
+        </p>
+      </div>
+    </article>
+
+    <figure class="exhibit">
+      <div class="art">
+        <svg viewBox="0 0 420 300" role="img" aria-labelledby="fig2title fig2desc">
+          <title id="fig2title">Herbal minerals mapped to elimination pathways</title>
+          <desc id="fig2desc">Four botanical sprigs; sea moss, bladderwrack, sarsaparilla, dandelion; arranged around a simple body outline with three pathway lines.</desc>
+          <path d="M210 50 C188 50 176 70 176 94 C176 122 188 140 182 166 C175 198 158 212 162 238 C166 260 196 270 210 270 C224 270 254 260 258 238 C262 212 245 198 238 166 C232 140 244 122 244 94 C244 70 232 50 210 50 Z"
+                fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+          <path d="M176 105 C130 112 105 128 96 145" stroke="var(--forest)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M195 150 C165 178 148 205 150 232" stroke="var(--gold)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M244 95 C258 76 260 60 256 46" stroke="var(--forest-deep)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+          <g transform="translate(48,60)">
+            <path d="M0 30 C6 14 18 4 32 0 C24 14 20 24 22 34 C10 34 3 32 0 30 Z" fill="none" stroke="var(--forest)" stroke-width="1.4"/>
+            <text x="16" y="52" font-family="var(--font-mono)" font-size="9.5" fill="var(--forest)" text-anchor="middle">SEA MOSS</text>
+          </g>
+          <g transform="translate(330,55)">
+            <path d="M0 32 C-4 16 4 2 20 -4 C18 12 20 24 30 32 C16 38 6 38 0 32 Z" fill="none" stroke="var(--forest-deep)" stroke-width="1.4"/>
+            <text x="12" y="54" font-family="var(--font-mono)" font-size="9.5" fill="var(--forest-deep)" text-anchor="middle">BLADDERWRACK</text>
+          </g>
+          <g transform="translate(38,190)">
+            <path d="M0 0 C10 8 14 22 10 38 M0 0 C-8 10 -10 24 -4 40" fill="none" stroke="var(--gold)" stroke-width="1.4"/>
+            <text x="4" y="56" font-family="var(--font-mono)" font-size="9.5" fill="var(--gold)" text-anchor="middle">SARSAPARILLA</text>
+          </g>
+          <g transform="translate(330,195)">
+            <circle cx="0" cy="0" r="10" fill="none" stroke="var(--purple)" stroke-width="1.4"/>
+            <path d="M0 10 L0 34" stroke="var(--purple)" stroke-width="1.4"/>
+            <text x="2" y="54" font-family="var(--font-mono)" font-size="9.5" fill="var(--purple)" text-anchor="middle">DANDELION</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Fig. 2; Herbal minerals, mapped to the pathways they support.
+        <span class="sub">Traditional botanical use shown for reference; not a claim to treat kidney disease.</span>
+      </figcaption>
+    </figure>
+
+    <article class="item">
+      <div class="num">04</div>
+      <div>
+        <h2>A daily routine works alongside your care plan, not instead of it</h2>
+        <p>
+          Whatever your current treatment looks like; medication, dialysis, dietary limits set by your
+          nephrologist; that plan stays the plan. <strong>A mineral routine isn't positioned to replace
+          any part of it</strong>; it's positioned to sit next to it, the same way sleep and hydration do.
+          Nothing here is a substitute for the schedule your care team has you on.
+        </p>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="num">05</div>
+      <div>
+        <h2>Minerals are a two-way conversation with your labs</h2>
+        <p>
+          Potassium, magnesium, and sodium all matter to kidney function, and how much of each is right
+          for you depends entirely on your own bloodwork; it isn't a one-size-fits-all number, and it
+          isn't something a daily routine decides on your behalf. <strong>Any change to how you manage
+          minerals belongs in a conversation with your care team</strong>, grounded in your labs, not a
+          general rule.
+        </p>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="num">06</div>
+      <div>
+        <h2>Consistency compounds; on whatever timeline your body sets</h2>
+        <p>
+          Consistency matters here. Taken as part of a daily routine alongside regular checkups, this
+          kind of support is about giving your body room to do what it already does, over time.
+          <strong>Any trend in your labs is worth tracking with your care team</strong>; they're the ones
+          who can tell you what a change means and what, if anything, it opens up. Dialysis frequency is
+          set by your care team based on your numbers; if those numbers move, that's a conversation to
+          have with them, grounded in the data.
+        </p>
+      </div>
+    </article>
+
+    <figure class="exhibit">
+      <div class="art">
+        <svg viewBox="0 0 420 240" role="img" aria-labelledby="fig3title fig3desc">
+          <title id="fig3title">Illustrative tracking chart</title>
+          <desc id="fig3desc">A simple line chart labeled Weeks on the horizontal axis and Your Notes on the vertical axis, with a gently rising illustrative trend line and a row of checkpoint dots.</desc>
+          <line x1="50" y1="20" x2="50" y2="190" stroke="var(--line)" stroke-width="1.2"/>
+          <line x1="50" y1="190" x2="390" y2="190" stroke="var(--line)" stroke-width="1.2"/>
+          <text x="20" y="110" font-family="var(--font-mono)" font-size="10" fill="var(--muted)" transform="rotate(-90 20 110)" text-anchor="middle">YOUR NOTES</text>
+          <text x="220" y="215" font-family="var(--font-mono)" font-size="10" fill="var(--muted)" text-anchor="middle">WEEKS, LOGGED WITH YOUR CARE TEAM</text>
+
+          <path d="M50 170 C120 165 150 150 190 140 C240 128 270 110 320 95 C345 88 365 80 390 62"
+                fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="50" cy="170" r="3.5" fill="var(--forest)"/>
+          <circle cx="190" cy="140" r="3.5" fill="var(--forest)"/>
+          <circle cx="320" cy="95" r="3.5" fill="var(--forest)"/>
+          <circle cx="390" cy="62" r="4" fill="var(--purple)"/>
+        </svg>
+      </div>
+      <figcaption>Fig. 3; Tracking is a habit, not a guarantee.
+        <span class="sub">Illustrative only. Individual results, labs, and timelines vary and are interpreted by your care team, not this routine.</span>
+      </figcaption>
+    </figure>
+
+    <article class="item">
+      <div class="num">07</div>
+      <div>
+        <h2>The idea behind elimination support is simple</h2>
+        <p>
+          When the body's other clearing pathways; lymphatic, digestive, skin; are supported instead
+          of ignored, there's less waste for any single system to carry alone. That's the whole idea
+          behind a mineral-based daily routine: <strong>share the load, don't shortcut the process</strong>.
+          It's straightforward biology, not a shortcut around medical care.
+        </p>
+      </div>
+    </article>
+
+    <section class="conclusion">
+      <h2>Here's what this means for you</h2>
+      <p>
+        None of this replaces your care team, your labs, or your treatment plan; it was never meant to.
+        What it does is fill in a gap most pamphlets skip: your body has more than one system working on
+        waste clearance, cellular renewal is ordinary biology, and a daily mineral routine can sit
+        alongside your existing plan rather than compete with it. <strong>The rest; your numbers, your
+        timeline, your next conversation with your doctor</strong>; stays exactly where it belongs: with
+        you and your care team.
+      </p>
+    </section>
+
+  </div>
+
+  <section class="cta-section" id="cta">
+    <div class="wrap">
+      <h2>Ready to add it to your routine?</h2>
+      <p class="sub">A daily mineral routine, built to sit alongside the plan you're already on.</p>
+      <a class="btn-primary" href="#MAIN_URL" id="mainCta">Start My Daily Kidney Wellness Routine</a>
+      <p class="cta-terms">30-Day Money-Back Guarantee <span class="dot">&middot;</span> First 500 Get 6 Months Free</p>
+    </div>
+  </section>
+</main>
+
+<div class="sticky-cta" id="stickyCta">
+  <a href="#MAIN_URL">Start My Daily Routine</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="legal">
+      These statements have not been evaluated by the Food and Drug Administration. This product is
+      not intended to diagnose, treat, cure, or prevent any disease, including kidney disease, and is
+      not a substitute for professional medical advice, diagnosis, or treatment.
+    </p>
+    <p class="legal">
+      Always consult your physician or nephrologist before starting any new supplement, and never
+      change your medication, dialysis schedule, or dietary restrictions without your care team's
+      guidance. Individual results vary.
+    </p>
+    <p class="mark">&copy; <span id="year"></span> &middot; All content for informational purposes only</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var items = document.querySelectorAll('.item');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.item').forEach(function (el) {
+      el.classList.add('is-visible');
+    });
+  }
+
+  var sticky = document.getElementById('stickyCta');
+  var mainCta = document.getElementById('cta');
+  var hero = document.querySelector('.hero');
+
+  function updateSticky() {
+    var heroBottom = hero.getBoundingClientRect().bottom;
+    var ctaRect = mainCta.getBoundingClientRect();
+    var ctaVisible = ctaRect.top < window.innerHeight && ctaRect.bottom > 0;
+    if (heroBottom < 0 && !ctaVisible) {
+      sticky.classList.add('show');
+    } else {
+      sticky.classList.remove('show');
+    }
+  }
+
+  window.addEventListener('scroll', updateSticky, { passive: true });
+  window.addEventListener('resize', updateSticky);
+  updateSticky();
+</script>
+
+</body>
+</html>
